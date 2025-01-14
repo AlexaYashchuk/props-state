@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import ChildComponent from './components/ChildComponent'
-import SiblingComponent from './components/SiblingComponent'
+import ChildComponent from './components/functionalComp/ChildComponent'
+import SiblingComponent from './components/functionalComp/SiblingComponent'
+import ChildComponentClass from './components/classComp/ChildComponentClass'
+import SiblingComponentClass from './components/classComp/SiblingComponentClass' 
+
 
 function ParentComponent() {
   const [counter , setCounter] = useState(0)
@@ -42,6 +45,9 @@ function ParentComponent() {
       </div>
       <ChildComponent name = {`Александра`} counter = {counter}/>
       <SiblingComponent/>
+      <hr />
+      <ChildComponentClass name = {`Павеллл`} counter = {counter}/>
+      <SiblingComponentClass/>
     </div>
   )
 }
