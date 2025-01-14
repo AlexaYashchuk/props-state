@@ -2,9 +2,12 @@ import React from "react";
 
 class SiblingComponentClass extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {text: `Начальный тест`}
+    // constructor() {
+    //     super();
+    //     this.state = {text: `Начальный тест`}
+    // }
+    state = {
+        text: `Начальный тест`
     }
 
     changeText = () => {

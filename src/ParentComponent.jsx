@@ -46,7 +46,7 @@ function ParentComponent() {
       <ChildComponent name = {`Александра`} counter = {counter}/>
       <SiblingComponent/>
       <hr />
-      <ChildComponentClass name = {`Павеллл`} counter = {counter}/>
+      <ChildComponentClass name = {`Павел`} counter = {counter}/>
       <SiblingComponentClass/>
     </div>
   )
