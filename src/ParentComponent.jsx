@@ -15,22 +15,20 @@ function ParentComponent() {
 
   const decriment = () => {
     setCounter((counter) => {
-      if (counter > 0) {
-        return counter -1
-      }
-      else return counter
-    } )
+      return counter > 0 ? (counter-1): (counter)
+    });
   }
 
+  //Функция обновления состояния из useState может принимать значение или функцию, которая вычисляет новое значение состояния на основе предыдущего состояния. 
   const reset = () => {
-    setCounter((counter) => counter = 0 )
+    setCounter(0)
   }
 
+  const randomValue = Math.floor(Math.random()*(10-1)+1);
   const random = () => {
-    setCounter((counter) => {
-      counter = Math.floor(Math.random()*(10-1)+1)
-      return counter;
-    })
+
+  setCounter(randomValue)
+    
   }
 
   return (

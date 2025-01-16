@@ -5,7 +5,7 @@ const TextComp = () => {
     const [text,setText] = useState(`ТЕКУЩИЙ ТЕКСТ`)
 
     const changeText = () => {
-        setText((text) => text = `REDEV`)
+        setText(`REDEV`)
     }
 
     return (
